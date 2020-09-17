@@ -1,11 +1,10 @@
-function [] = interpolateExperimentalData(ts);
+function [] = interpolateExperimentalData(ts)
 format compact; % compact format
 
-fileDirectory = pwd; 
+fileDirectory = [pwd, '\..\trainingData\']; 
 
-fileDirectory = [fileDirectory, '/trainingData/'];
+% fileDirectory = [fileDirectory, '../trainingData/'];
 % add path to data
-% addpath ./trainingData/
 
 % get folders with data
 topLevelFolder = fileDirectory;
